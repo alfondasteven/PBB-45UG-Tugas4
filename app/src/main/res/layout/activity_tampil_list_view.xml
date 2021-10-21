@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TampilListView">
+
+    <TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableRow
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_span="1"
+            android:text="LIST ANIME"
+            android:textColor="#808080"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_height="315dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <ListView
+            android:id="@+id/listdataanime"
+            android:layout_width="match_parent"
+            android:layout_height="423dp"
+            android:layout_weight="1" />
+
+    </TableRow>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTitle"
+            android:hint="Title"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1" >
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/editGenre"
+            android:hint="Genre"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1" >
+
+        </EditText>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <EditText
+            android:id="@+id/editEps"
+            android:hint="Total Episode"
+            android:layout_height="match_parent"
+            android:layout_width="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1" >
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/editRelase"
+            android:hint="Relase Date"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1" >
+
+        </EditText>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="Submit"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tblTambah"
+            android:layout_span="1" ></Button>
+    </LinearLayout>
+
+
+
+
+</TableLayout>
+</LinearLayout>
+
